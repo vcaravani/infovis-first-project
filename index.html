@@ -1,0 +1,53 @@
+<!-- references: 0) http://www.dia.uniroma3.it/~infovis/program-2019-2020.php
+                 1) http://bl.ocks.org/WilliamQLiu/76ae20060e19bf42d774-->
+<!--             2) http://bl.ocks.org/WilliamQLiu/bd12f73d0b79d70bfbae-->
+<!DOCTYPE html>
+  <head>
+    <title>Scatter Plot</title>
+    <meta charset="utf-8">
+    <!-- Load d3.js -->
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Load viz.css -->
+    <link rel="stylesheet" type="text/css" href="css/viz.css">
+  </head>
+  <body>
+  <!-- Create a div where the graph will take place -->
+  <div class="container-fluid">
+    <div class="jumbotron shadow-sm" style="background-color: #b5d9d1;"><div class="container"><h1 style="opacity: 1;">INFOVIS: Progetto Individuale</h1></div></div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="card card-body shadow-sm">
+          <h5 class="card-title">To Do:</h5>
+          <hr></hr>
+          <p class="card-text">Crea un file json con dei dati trivariati: ci sono 10 data-case e ogni
+        data-case ha tre variabili quantitative. Prima disegna questo dataset
+        tramite uno scatter-plot (una serie di cerchietti su un piano) in cui la
+        prima variabile quantitativa v1 è utilizzata per le x e la seconda
+        variabile quantitativa v2 è utilizzata per le y. Facendo click con il
+        pulsante sinistro del mouse sull'asse delle x o delle y la variabile
+        quantitativa esclusa dalla visualizzazione (in questo momento la terza
+        variabile quantitativa v3) prende il posto della variabile quantitativa
+        utilizzata in quell'asse, supponi v1. Continuando a fare click sugli
+        assi le variabili si scambiano ancora con la stessa regola.
+        Fai in modo che le transizioni siano progressive e non a salti.</p>
+      </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="card  card-body shadow-sm">
+          <h5 class="card-title">Scatter Plot</h5>
+          <hr></hr>
+        <div id="my_dataviz"></div>
+        <script src="js/plot.js"></script>
+      </div>
+     </div>
+     <div class="col-sm-4">
+       <div id="table_place" class="card card-body shadow-sm">
+        <h5 class="card-title">Dataset:</h5>
+        <script src="js/table_filler.js"></script>
+       </div>
+     </div>
+</div>
+  </div>
+  </body>
+</html>
